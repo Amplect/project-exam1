@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: initial;
+    transition: all 0.5s;
+}
+
+header.scrolled {
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: block;
+    float: right;
+    margin-top: -40px;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+
+nav ul li a {
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+.homepage-main {
+    background-image: url(../images/iss064e018896.jpg);
+    /* background-color: #000; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    color: #fff;
+    margin-top: -70px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.peopleinspace {
+    width: 100%;
+    height: 200px;
+    background-color: #161748;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.peopletext {
+    margin: 25px;
+}
+
+.peopleinspacebutton {
+    display: block;
+    background-color: #3d3f8a;
+    color: #fff;
+    width: 250px;
+}
+
+.peopleinspacebutton:hover {
+    background-color: #7477c9;
+}
+
+.loader {
+    border: 10px solid #ffffff;
+    border-top: 10px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+    margin: 0 auto;
+    margin-top: 20px;
+    transform: translateX(-50%);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px 10px 20px 10px;
+    flex-basis: 400px;
+    padding: 20px;
+    font-family: Helvetica, sans-serif;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    padding-bottom: 15px;
+}
+
+p {
+    padding-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: lightgray;
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(182, 182, 182);
+}
+
+.topfooter {
+    background-color: #161748;
+    color: #fff;
+    padding: 15px;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footeritem {
+    flex-basis: 280px;
+    padding: 20px;
+}
+
+.topfooter a {
+    display: block;
+    padding: 10px;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottomfooter {
+    background-color:#000;
+    color: #b9b9b9;
+    padding: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+.bottomfooter p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

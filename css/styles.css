@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: initial;
+    transition: all 0.5s;
+}
+
+header.scrolled {
+    background-color: #000;
+    transition: all 0.5s;
+}
+
+header.scrolled a {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+h1 a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: block;
+    float: right;
+    margin-top: -40px;
+    padding: 10px;
+    font-size: 1.5em;
+
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: lightgray;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    margin: 40px 0px 50px 0px;
+}
+
+h3 {
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    text-align: left;
+}
+
+.questioncard {
+    font-family: Helvetica, sans-serif;
+    margin: 0 auto;
+    max-width: 600px;
+    height: 100%;
+}
+
+.questioncard h3 {
+    font-variant: normal;
+    padding-top: 60px;
+}
+
+.questioncard p {
+    padding-top: 15px;
+}
+
+.questioncard a {
+    font-variant: small-caps;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+questioncard a:hover {
+    cursor: pointer;
+    color:rgb(182, 182, 182)
+}
+
+.ptext {
+    font-family: Helvetica, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.ptext p {
+    padding-bottom: 15px;
+}
+
+form {
+    width: 600px;
+    margin: 0 auto;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    font-family: Helvetica, sans-serif;
+    border: 1px solid;
+    border-color:rgb(182, 182, 182)
+}
+
+textarea {
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    width: 100%;
+    font-family: Helvetica, sans-serif;
+    border: 1px solid;
+    border-color:rgb(182, 182, 182)
+}
+
+button {
+    padding: 10px 20px 10px 20px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background-color: lightgray;
+    font-family: Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(182, 182, 182);
+}
+
+#firstnameError, #lastnameError, #emailError, #messageError {
+    width: 100%;
+    display: none;
+    background-color: rgba(255, 0, 0, 0.2);
+    color: red;
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 0.5em;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.successmessage {
+    width: 100%;
+    background-color: rgba(0, 255, 0, 0.2);
+    color: green;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.5em;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.centeredimg {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0px 10px 0px;
+    max-width: 600px;
+}
+
+.centeredimg img {
+    width: 100%;
+    height: auto;
+}
+
+.infocard {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: Helvetica, sans-serif;
+}
+
+.infocard p {
+    padding-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.card {
+    flex-basis: auto;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.card h3 {
+    text-align: center;
+    font-variant: normal;
+}
+
+figure {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-family: Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.loader {
+    border: 10px solid #515fda;
+    border-top: 10px solid transparent;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1.5s linear infinite;
+    margin: 0 auto;
+    margin-top: 20px;
+    transform: translateX(-50%);
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+.topfooter {
+    background-color: #161748;
+    color: #fff;
+    padding: 15px;
+    font-family: Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footeritem {
+    flex-basis: 280px;
+    padding: 20px;
+}
+
+.topfooter a {
+    display: block;
+    padding: 10px;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.bottomfooter {
+    background-color:#000;
+    color: #b9b9b9;
+    padding: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+.bottomfooter p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    form {
+        width: 300px;
+    }
+}
